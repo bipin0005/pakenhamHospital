@@ -1,0 +1,56 @@
+/* Global styles for PMS Prototype */
+
+body {
+  background-color: #f6f8fb;
+}
+
+.quick-card {
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  cursor: pointer;
+}
+
+.quick-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Chat styles */
+#chatWindow .msg {
+  max-width: 85%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#chatWindow .msg.user {
+  background-color: #e7f1ff;
+  align-self: flex-end;
+}
+
+#chatWindow .msg.bot {
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+}
+
+/* Table utilities */
+.badge-low {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.row-alert {
+  background-color: #fff8e1 !important;
+}
+
+/* Small helpers */
+.text-wrap-balance {
+  text-wrap: balance;
+}
+
+@media (max-width: 576px) {
+  #chatWindow {
+    height: 280px !important;
+  }
+}
+
+
