@@ -1,0 +1,56 @@
+/* Basic styles for PMS prototype */
+body { background-color: #f7f9fb; }
+.hero { padding: 3rem 1rem; background: linear-gradient(90deg, #e3f2fd, #f1f8ff); border-radius: .75rem; }
+.card-hover:hover { box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); transform: translateY(-2px); transition: all .2s ease; }
+.form-help { font-size: .875rem; color: #6c757d; }
+.table-sm td, .table-sm th { vertical-align: middle; }
+.badge-specialty { background-color: #e9f5ff; color: #0d6efd; border: 1px solid #b6dcff; }
+#app-root { min-height: 65vh; }
+
+/* Notification badge animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+#notif-badge.attn { animation: pulse 1.5s infinite; }
+
+/* Chatbot styles */
+#chatbotToggle {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+#chatbotToggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+#chatbotContainer .card {
+  border: none;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+#chatMessages {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+#chatMessages::-webkit-scrollbar {
+  width: 6px;
+}
+
+#chatMessages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+#chatMessages::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+#chatMessages::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+
